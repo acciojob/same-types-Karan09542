@@ -1,6 +1,6 @@
 function isSameType(value1, value2) {
   //your js code here
-		value1 = value1.trim();
+	value1 = value1.trim();
 	value2 = value2.trim();
 	
 	const num1 = parseFloat(value1)
