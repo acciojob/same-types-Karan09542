@@ -3,7 +3,7 @@ function isSameType(value1, value2) {
 	value1.trim();value2.trim();
 	if(value1==="NaN" && value2==="NaN") return true;
 	else if(value1 !== "NaN" && value2 !== "NaN"){
-		if(typeof parseFloat(value1) !== number && typeof parseFloat(value2) !== number) {
+		if(typeof parseFloat(value1) !== "number" && typeof parseFloat(value2) !== "number") {
 			return true
 		}
 		else return true
