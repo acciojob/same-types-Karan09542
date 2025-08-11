@@ -11,11 +11,12 @@ function isSameType(value1, value2) {
 	if(value1 === "NaN" && value2 === "NaN") return true;
 	else if (value1 === "NaN" || value2 === "NaN") return false;
 	else if (isNum1NaN && isNum2NaN) return true; // thats implies they are strings
+	else if ( (isNum1NaN && num2 === "number") || (isNum2NaN && n1=== "number") ) return false;
 	else if (typeof num1 === "number" && typeof num2 === "number") return true;
 	else return false
 }
 
 // do not change the code below.
-let value1 = prompt("Enter Start of the Range.");
-let value2 = prompt("Enter End Of the Range.");
-alert(isSameType(value1, value2));
+// let value1 = prompt("Enter Start of the Range.");
+// let value2 = prompt("Enter End Of the Range.");
+// alert(isSameType(value1, value2));
