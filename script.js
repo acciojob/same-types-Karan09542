@@ -1,8 +1,10 @@
 function isSameType(value1, value2) {
   //your js code here
-	value1 = parseFloat(value1)
-	value2 = parseFloat(value2)
-	return typeof value1 === typeof value2
+	value1.trim();value2.trim();
+	if(value1==="NaN" && value2==="NaN") return true;
+	else if(typeof parseFloat(value1) === typeof parseFloat(value2)) return true;
+	else if(typeof value1 === typeof value2) return true;
+	else return false
 }
 
 // do not change the code below.
