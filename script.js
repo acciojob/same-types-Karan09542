@@ -1,7 +1,7 @@
 function isSameType(value1, value2) {
   //your js code here
-	if(Number(value1)) value1 = Number(value1)
-	else if(Number(value2)) value2 = Number(value2)
+	value1 = parseFloat(value1)
+	value2 = parseFloat(value2)
 	return typeof value1 === typeof value2
 }
 
